@@ -12,7 +12,7 @@ import {
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
-import { useRouter, usePathname, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 function Header({ placeholder }) {
   const [searchInput, setSearchInput] = useState("");
@@ -20,8 +20,6 @@ function Header({ placeholder }) {
   const [endDate, setEndDate] = useState(new Date());
   const [noOfGuests, setNoGuests] = useState(1);
   const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
 
   const handleSelect = (ranges) => {
     setStartDate(ranges.selection.startDate);

@@ -14,7 +14,7 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 import { DateRangePicker } from "react-date-range";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 
-function header({ placeholder }) {
+function Header({ placeholder }) {
   const [searchInput, setSearchInput] = useState("");
   const [startDate, setStartDate] = useState(new Date()); //new date gives today's date
   const [endDate, setEndDate] = useState(new Date());
@@ -134,4 +134,4 @@ function header({ placeholder }) {
   );
 }
 
-export default header;
+export default Header;

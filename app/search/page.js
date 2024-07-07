@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import Header from "../../components/Header";
 import Footer from "@/components/Footer";
 import { useSearchParams } from "next/navigation";
@@ -158,7 +158,15 @@ function Page() {
   );
 }
 
-export default Page;
+function PageWithSuspense() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Page />
+    </Suspense>
+  );
+}
+
+export default PageWithSuspense;
 
 // export async function getServerSideProps() {
 //   const searchResults = await fetch("https://links.papareact.com/isz").then(

@@ -76,7 +76,7 @@ function Header({ placeholder }) {
       </div>
 
       {/* middle div */}
-      <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-sm">
+      <div className="hidden sm475:flex items-center md:border-2 rounded-full py-2 md:shadow-sm">
         <input
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)} //get the value/text in text box
@@ -90,7 +90,7 @@ function Header({ placeholder }) {
       {/* right div */}
       <div className="flex items-center justify-end text-gray-500 space-x-4">
         <p className="hidden md:inline cursor-pointer">Become a host</p>
-        <GlobeAltIcon className="h-6 cursor-pointer"></GlobeAltIcon>
+        <GlobeAltIcon className="hidden md:inline h-6 cursor-pointer"></GlobeAltIcon>
         <div className="flex items-center space-x-2 rounded-full border-2 p-2">
           <MenuIcon className="h-6"></MenuIcon>
           <UserCircleIcon className="h-6"></UserCircleIcon>

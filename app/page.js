@@ -79,6 +79,7 @@ export default async function Home() {
     <div>
       <Head>
         <title>Airbnb clone</title>
+        <meta name="google-site-verification" content="tLeNIrZpNS21aggfJeVIAJmRHHWCONpCdfNHpgb6BzQ" />
       </Head>
       <Header></Header>
       <Banner></Banner>
